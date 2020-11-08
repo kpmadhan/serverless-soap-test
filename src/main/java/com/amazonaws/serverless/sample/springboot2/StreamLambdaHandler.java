@@ -13,13 +13,20 @@ import com.amazonaws.services.lambda.runtime.RequestStreamHandler;
 import javax.servlet.DispatcherType;
 import javax.servlet.FilterRegistration;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.EnumSet;
 
 
 public class StreamLambdaHandler implements RequestStreamHandler {
+	  final Logger LOGGER = LoggerFactory.getLogger(getClass());
     private static SpringBootLambdaContainerHandler<AwsProxyRequest, AwsProxyResponse> handler;
     static {
         try {
@@ -53,6 +60,29 @@ public class StreamLambdaHandler implements RequestStreamHandler {
     @Override
     public void handleRequest(InputStream inputStream, OutputStream outputStream, Context context)
             throws IOException {
-        handler.proxyStream(inputStream, outputStream, context);
+    	
+        LOGGER.info("Invoking handleRequest");
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        org.apache.commons.io.IOUtils.copy(inputStream, baos);
+        byte[] bytes = baos.toByteArray();
+
+        ByteArrayInputStream bais = new ByteArrayInputStream(bytes);
+        String s = new String(bytes, StandardCharsets.UTF_8);
+        LOGGER.info(s);
+
+        // reading from API GW object
+//        Request apiRequest = objectMapper.readValue(s, Request.class);
+/*
+        LOGGER.info("input body after converting API GW object" + apiRequest.getBody().toString());
+        String reqBodyAsString = apiRequest.getBody().toString();
+*/
+
+//       outputStream.write(objectMapper.writeValueAsString(apiRequest.getBody()).getBytes());
+//        LOGGER.info("Lambda process is completed");
+
+        handler.proxyStream(bais, outputStream, context);
+        
+      
     }
 }

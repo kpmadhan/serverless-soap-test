@@ -22,12 +22,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
+<!--             <exclusions> -->
+<!--                 <exclusion> -->
+<!--                     <groupId>org.springframework.boot</groupId> -->
+<!--                     <artifactId>spring-boot-starter-tomcat</artifactId> -->
+<!--                 </exclusion> -->
+<!--             </exclusions> -->
         </dependency>
 
         <dependency>
@@ -46,6 +46,10 @@
 			<artifactId>wsdl4j</artifactId>
 		</dependency>
 		<!-- end::springws[] -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.dataformat</groupId>
+		    <artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
         
 
         <!-- https://mvnrepository.com/artifact/io.symphonia/lambda-logging -->
@@ -54,6 +58,13 @@
             <artifactId>lambda-logging</artifactId>
             <version>1.0.1</version>
         </dependency>
+        
+        <dependency>
+	<groupId>com.google.code.findbugs</groupId>
+	<artifactId>findbugs-annotations</artifactId>
+	<version>3.0.1</version>
+</dependency>
+
     </dependencies>
 
     <profiles>

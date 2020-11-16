@@ -1,0 +1,111 @@
+{
+    "version": "1.0",
+    "resource": "$default",
+    "path": "/ws/countries.wsdl",
+    "httpMethod": "GET",
+    "headers": {
+        "Content-Length": "0",
+        "Host": "ed2ueguzj8.execute-api.ap-southeast-2.amazonaws.com",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+        "X-Amzn-Trace-Id": "Root=1-5fb1c71c-11e3cdf7244402cb0520958b",
+        "X-Forwarded-For": "103.120.9.25",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-US,en;q=0.9",
+        "purpose": "prefetch",
+        "sec-fetch-dest": "document",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-site": "none",
+        "sec-fetch-user": "?1",
+        "upgrade-insecure-requests": "1"
+    },
+    "multiValueHeaders": {
+        "Content-Length": [
+            "0"
+        ],
+        "Host": [
+            "ed2ueguzj8.execute-api.ap-southeast-2.amazonaws.com"
+        ],
+        "User-Agent": [
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5fb1c71c-11e3cdf7244402cb0520958b"
+        ],
+        "X-Forwarded-For": [
+            "103.120.9.25"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+        ],
+        "accept-encoding": [
+            "gzip, deflate, br"
+        ],
+        "accept-language": [
+            "en-US,en;q=0.9"
+        ],
+        "purpose": [
+            "prefetch"
+        ],
+        "sec-fetch-dest": [
+            "document"
+        ],
+        "sec-fetch-mode": [
+            "navigate"
+        ],
+        "sec-fetch-site": [
+            "none"
+        ],
+        "sec-fetch-user": [
+            "?1"
+        ],
+        "upgrade-insecure-requests": [
+            "1"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "requestContext": {
+        "accountId": "430666551340",
+        "apiId": "ed2ueguzj8",
+        "domainName": "ed2ueguzj8.execute-api.ap-southeast-2.amazonaws.com",
+        "domainPrefix": "ed2ueguzj8",
+        "extendedRequestId": "WEwMijKASwMEQBQ=",
+        "httpMethod": "GET",
+        "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "103.120.9.25",
+            "user": null,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+            "userArn": null
+        },
+        "path": "/ws/countries.wsdl",
+        "protocol": "HTTP/1.1",
+        "requestId": "WEwMijKASwMEQBQ=",
+        "requestTime": "16/Nov/2020:00:26:04 +0000",
+        "requestTimeEpoch": 1605486364962,
+        "resourceId": "$default",
+        "resourcePath": "$default",
+        "stage": "$default"
+    },
+    "pathParameters": null,
+    "stageVariables": null,
+    "body": null,
+    "isBase64Encoded": false
+}

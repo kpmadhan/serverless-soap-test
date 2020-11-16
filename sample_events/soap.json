@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+    "resource": "$default",
+    "path": "/ws",
+    "httpMethod": "POST",
+    "headers": {
+        "Content-Length": "307",
+        "Content-Type": "text/xml;charset=UTF-8",
+        "Host": "ed2ueguzj8.execute-api.ap-southeast-2.amazonaws.com",
+        "SOAPAction": "\"\"",
+        "User-Agent": "Apache-HttpClient/4.5.5 (Java/12.0.1)",
+        "X-Amzn-Trace-Id": "Root=1-5fb1cda6-4c7b82267f3733cf389034e8",
+        "X-Forwarded-For": "120.18.209.89",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https",
+        "accept-encoding": "gzip,deflate"
+    },
+    "multiValueHeaders": {
+        "Content-Length": [
+            "307"
+        ],
+        "Content-Type": [
+            "text/xml;charset=UTF-8"
+        ],
+        "Host": [
+            "ed2ueguzj8.execute-api.ap-southeast-2.amazonaws.com"
+        ],
+        "SOAPAction": [
+            "\"\""
+        ],
+        "User-Agent": [
+            "Apache-HttpClient/4.5.5 (Java/12.0.1)"
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5fb1cda6-4c7b82267f3733cf389034e8"
+        ],
+        "X-Forwarded-For": [
+            "120.18.209.89"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "accept-encoding": [
+            "gzip,deflate"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "requestContext": {
+        "accountId": "430666551340",
+        "apiId": "ed2ueguzj8",
+        "domainName": "ed2ueguzj8.execute-api.ap-southeast-2.amazonaws.com",
+        "domainPrefix": "ed2ueguzj8",
+        "extendedRequestId": "WE0SAiYOywMEQBQ=",
+        "httpMethod": "POST",
+        "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "120.18.209.89",
+            "user": null,
+            "userAgent": "Apache-HttpClient/4.5.5 (Java/12.0.1)",
+            "userArn": null
+        },
+        "path": "/ws",
+        "protocol": "HTTP/1.1",
+        "requestId": "WE0SAiYOywMEQBQ=",
+        "requestTime": "16/Nov/2020:00:53:58 +0000",
+        "requestTimeEpoch": 1605488038311,
+        "resourceId": "$default",
+        "resourcePath": "$default",
+        "stage": "$default"
+    },
+    "pathParameters": null,
+    "stageVariables": null,
+    "body": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:gs=\"http://spring.io/guides/gs-producing-web-service\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <gs:getCountryRequest>\n         <gs:name>Spain</gs:name>\n      </gs:getCountryRequest>\n   </soapenv:Body>\n</soapenv:Envelope>",
+    "isBase64Encoded": false
+}

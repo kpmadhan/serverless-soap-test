@@ -19,7 +19,12 @@ dependencies {
           'org.springframework.boot:spring-boot-starter-web-services:2.3.5.RELEASE',
 		  'wsdl4j:wsdl4j:1.6.1',
           'com.amazonaws.serverless:aws-serverless-java-container-springboot2:[1.4,)',
-          'io.symphonia:lambda-logging:1.0.1'
+          'io.symphonia:lambda-logging:1.0.1',
+		  'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.3',
+		  'com.google.code.findbugs:findbugs-annotations:3.0.1'
+
+		  
+          
   )
   testCompile("junit:junit")
 }

@@ -74,4 +74,25 @@ public class PetsController {
         return newPet;
     }
 
+    @RequestMapping(path = "/pets/xml", method = RequestMethod.GET ,consumes = {"application/xml","application/json"},
+            produces = "application/xml")
+    public Pet[] listPetsxml(@RequestParam("limit") Optional<Integer> limit, Principal principal) {
+        int queryLimit = 10;
+        if (limit.isPresent()) {
+            queryLimit = limit.get();
+        }
+
+        Pet[] outputPets = new Pet[queryLimit];
+
+        for (int i = 0; i < queryLimit; i++) {
+            Pet newPet = new Pet();
+            newPet.setId(UUID.randomUUID().toString());
+            newPet.setName(PetData.getRandomName());
+            newPet.setBreed(PetData.getRandomBreed());
+            newPet.setDateOfBirth(PetData.getRandomDoB());
+            outputPets[i] = newPet;
+        }
+
+        return outputPets;
+    }
 }

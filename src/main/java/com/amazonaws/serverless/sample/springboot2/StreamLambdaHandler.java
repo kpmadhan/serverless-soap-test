@@ -62,6 +62,7 @@ public class StreamLambdaHandler implements RequestStreamHandler {
             throws IOException {
     	
         LOGGER.info("Invoking handleRequest");
+      
 
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         org.apache.commons.io.IOUtils.copy(inputStream, baos);

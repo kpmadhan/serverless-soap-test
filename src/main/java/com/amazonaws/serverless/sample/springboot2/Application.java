@@ -20,13 +20,12 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @SpringBootApplication
-@Import({ PetsController.class })
+@Import({ PetsController.class , CountryEndpoint.class , WebServiceConfig.class })
 public class Application {
 
     // silence console logging
     @Value("${logging.level.root:OFF}")
     String message = "";
-
     /*
      * Create required HandlerMapping, to avoid several default HandlerMapping instances being created
      */
